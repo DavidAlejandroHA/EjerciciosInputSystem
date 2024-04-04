@@ -1,0 +1,54 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "TocarMapa",
+            "id": "4bab34e9-e549-4c07-b2d0-fd53f82c8c56",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Value",
+                    "id": "2cd48ec2-030b-4aad-a9b1-4b6d8e690909",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Toque",
+                    "type": "Value",
+                    "id": "78a094a0-c86c-436f-990f-a1b659850051",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a94bd5a7-9c91-465c-be5d-b4ad859d8f58",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9a79ea29-40ef-4d4b-abe4-91e1b61d2c5b",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Toque",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

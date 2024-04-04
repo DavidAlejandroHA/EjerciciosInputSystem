@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3986246197388926357}
   - component: {fileID: 8503506460387773321}
   - component: {fileID: 4944985873625547143}
+  - component: {fileID: -5689085241871387597}
   - component: {fileID: -5046453314647669975}
   - component: {fileID: 3645311624973717763}
   - component: {fileID: -4238089274651241837}
@@ -86,6 +87,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-5689085241871387597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265568255130244215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707e2979d8afb1d4d9e2b8d9be8dbadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: -4238089274651241837}
 --- !u!114 &-5046453314647669975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 5e05eb751cf3db04f9b30644f9756f2e, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 503c3299311ebd141a865405c04ec0cc, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -145,10 +159,14 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2cd48ec2-030b-4aad-a9b1-4b6d8e690909
+    m_ActionName: TocarMapa/Click[/Device Simulator Touchscreen/primaryTouch/position]
+  - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -5046453314647669975}
-        m_TargetAssemblyTypeName: CubeController, Assembly-CSharp
-        m_MethodName: Touch
+      - m_Target: {fileID: -5689085241871387597}
+        m_TargetAssemblyTypeName: CamaraTouch, Assembly-CSharp
+        m_MethodName: comprobarToque
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -158,10 +176,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 1e778341-9021-4021-9b5c-b3e25c0396f5
-    m_ActionName: Cubo/Tocar
+    m_ActionId: 78a094a0-c86c-436f-990f-a1b659850051
+    m_ActionName: TocarMapa/Toque[/Device Simulator Touchscreen/primaryTouch]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Cubo
+  m_DefaultActionMap: TocarMapa
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

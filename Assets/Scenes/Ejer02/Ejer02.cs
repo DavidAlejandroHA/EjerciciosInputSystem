@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Cinemachine;
 
 public class Ejer02 : MonoBehaviour
 {
+    public CinemachineVirtualCamera cam1;
+    public CinemachineVirtualCamera cam2;
     Rigidbody rb;
     PlayerInput playerInput;
     public float velocidad;
@@ -29,5 +32,12 @@ public class Ejer02 : MonoBehaviour
         //Debug.Log("Saltando " + context);
         rb.AddForce(Vector3.up, ForceMode.Impulse);
         Debug.Log("a");
+    }
+
+    public void cambiarCamara()
+    {
+        int prioritycam2 = cam2.Priority;
+        cam2.Priority = cam1.Priority;
+        cam1.Priority = prioritycam2;
     }
 }
